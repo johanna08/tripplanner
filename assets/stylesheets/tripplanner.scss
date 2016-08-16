@@ -1,0 +1,64 @@
+//page-layout
+.mdl-layout__content {
+	display: flex;
+	}
+
+#wrapper { 
+	display: flex;
+	position: relative; 
+}
+
+#over_map { 
+	flex: 1 100%;
+	position: absolute; 
+	top: 10px; 
+	left: 10px; 
+	z-index: 99; 
+	display: flex; 
+	justify-content: space-around;
+	width: 100vw;
+	height: 100vh;
+	.buttons {
+		display: flex;
+	    flex-direction: column;
+	    justify-content: space-between;
+	    height: 80vh;
+	    padding-top: 10px;
+		.topbuttons {
+		align-self: flex-start;
+		}
+		.bottombuttons {
+		align-self: flex-end;
+		}
+	}
+}
+
+.topbuttons.mdl-button--fab.mdl-button--colored {
+	align-self: flex-start;
+	background-color: #495ebb;
+	opacity: .9;
+}
+
+.bottombuttons.mdl-button--fab.mdl-button--colored {
+	align-self: flex-end;
+	background-color: #5ab65e;
+	opacity: .9;
+}
+
+.demo-card-square.mdl-card {
+  width: 25vw;
+  height: 60vh;
+  opacity: .9;
+  border-radius: 20px;
+}
+
+.mdl-card__subtitle-text {
+	padding-left: 10px; 
+	font-weight: bold;
+	
+}
+.demo-card-square > .mdl-card__title {
+  background-color: #495ebb;
+  color: #fd8db4; 
+  opacity: .9;
+}

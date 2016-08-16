@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>TripPlanner</title>
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-green.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Slab|Raleway' rel='stylesheet' type='text/css'>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+	<style type="text/css">
+      html, body { height: 100%; margin: 0; padding: 0; }
+      #map { height: 100vh; width: 100vw; }
+    </style>
+   <link rel="stylesheet" href="/stylesheets/tripplanner.css">
+
+ </head>
+
+ <body>
+<div class="mdl-layout__content">
+   <div id="wrapper">
+   <div id="map"></div>
+
+   <div id="over_map">
+   <!--FAB button with ripple -->
+   <div class="buttons">
+   		<div class="top">
+		<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--raised mdl-button--colored topbuttons">1
+		  <i class="material-icons"></i>
+		</button>
+		<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--raised mdl-button--colored topbuttons">2
+		  <i class="material-icons"></i>
+		</button>
+		<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--raised mdl-button--colored topbuttons">3
+		  <i class="material-icons"></i>
+		</button>
+		<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--raised topbuttons">
+		  <i class="material-icons">add</i>
+		</button>
+		</div>
+		<div class="bottom">
+		<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--raised mdl-button--colored bottombuttons">
+		  <i class="material-icons">restaurant_menu</i>
+		</button>
+		<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--raisedm mdl-button--colored bottombuttons">
+		  <i class="material-icons">directions_walk</i>
+		</button>
+		<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--raised mdl-button--colored bottombuttons">
+		  <i class="material-icons">hotel</i>
+		</button>
+		</div>
+	</div>
+
+	<div class="demo-card-square mdl-card mdl-shadow--2dp">
+		  <div class="mdl-card__title mdl-card--expand">
+		    <h2 class="mdl-card__title-text">My Trip: Day 2</h2>
+		  </div>
+		  <div>
+		    <h3 class="mdl-card__subtitle-text">Restaurants</h3>
+		  </div>
+		  <div class="mdl-card__supporting-text">
+		    Jacob's Pickles, 509 Amsterdam Ave
+		  </div>
+		  <div>
+		    <h3 class="mdl-card__subtitle-text">Activities</h3>
+		  </div>
+		  <div class="mdl-card__supporting-text">
+		    The Cloisters, 99 Margaret Corbin Dr
+		  </div>
+		  <div>
+		    <h3 class="mdl-card__subtitle-text">Hotel</h3>
+		  </div>
+		  <div class="mdl-card__supporting-text">
+		    Milburn Hotel, 242 W 76th St
+		  </div>
+		  <div class="mdl-card__actions mdl-card--border">
+		    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+		      Edit Day
+		    </a>
+		    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+		      Delete Day
+		    </a>
+		  </div>
+		</div>
+
+   </div>
+</div>
+</div>		
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFd3lWN2gDqG2PYF6JIJnWpMs5Nbbbiz0&callback=initMap"
+    async defer></script>
+    <script>
+      var map;
+      console.log('map');
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 40.7375838, lng: -73.9865716},
+            zoom: 13
+        });
+      }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+ </body>
+
+</html>
